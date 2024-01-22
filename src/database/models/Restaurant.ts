@@ -33,8 +33,12 @@ const restaurantSchema = new Schema({
       },
     },
   ],
-  status: { Boolean },
-  tags: { Array },
+  status: {
+    type: Boolean,
+  },
+  tags: {
+    type: Array,
+  },
 });
 
 const Restaurant = model("Restaurant", restaurantSchema, "restaurantes");
