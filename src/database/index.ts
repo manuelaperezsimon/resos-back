@@ -2,6 +2,7 @@ import "../loadEnvironment";
 import Debug from "debug";
 import chalk from "chalk";
 import mongoose from "mongoose";
+
 const debug = Debug("resos:database:index");
 
 const connectDB = async (mongoUrl: string) => {
