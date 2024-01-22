@@ -4,7 +4,7 @@ import chalk from "chalk";
 import { NextFunction, Request, Response } from "express";
 import ICustomError from "../../interfaces/interfacesErrors";
 
-const debug = Debug("ronwishly:server:middlewares:errors");
+const debug = Debug("resos:server:middlewares:errors");
 
 export const notFoundError = (req: Request, res: Response) => {
   res.status(404).json({ error: "Endpoint not found" });
