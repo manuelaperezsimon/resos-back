@@ -10,8 +10,7 @@ const restaurantSchema = new Schema({
     required: true,
   },
   createAt: {
-    type: Date,
-    default: new Date(),
+    type: String,
   },
   restaurantHours: [
     {
@@ -22,14 +21,6 @@ const restaurantSchema = new Schema({
       close: {
         type: String,
         required: true,
-      },
-    },
-    {
-      open: {
-        type: String,
-      },
-      close: {
-        type: String,
       },
     },
   ],
