@@ -35,7 +35,7 @@ export const searchRestaurantByName = async (
   const { name } = req.query;
 
   try {
-    const dbRestaurant = await Restaurant.findOne({ name: name });
+    const dbRestaurant = await Restaurant.findOne({ name });
 
     if (!dbRestaurant) {
       res.status(404).json({ restaurant: "No restaurant found" });
